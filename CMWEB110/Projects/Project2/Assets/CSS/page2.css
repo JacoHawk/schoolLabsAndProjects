@@ -1,0 +1,130 @@
+body {
+    background: #628395;
+    color: #eee4d6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color:#d0ce7c;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:visited {
+    color:#ecc384;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #96897b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#title {
+    font-size: 60px;
+    text-decoration: underline #dbad6a;
+    text-align: center;
+    text-shadow: 3px 3px 0 #96897b;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
+    left:0;
+    right:0;
+    position:fixed;
+    background-color: #628395;
+}
+
+#sub {
+    font-size: 30px;
+    text-align:center;
+    margin-top: 180px;
+    min-width: 400px;
+    font-weight: bold;
+}
+
+.heading {
+    margin-top: 100px;
+    background-color: #dbad6a;
+    overflow-x: hidden;
+    border-radius: .3em;
+    min-width: 400px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+h2 {
+    font-size: 38px;
+    text-align:center;
+}
+
+hr {
+    margin-top: 80px;
+    width: 600px;
+    color: #dbad6a;
+}
+
+.image {
+    float:left;
+}
+
+#smallant {
+    margin-top: 80px;
+    margin-left: 165px;
+    width: 400px;
+    border: thick solid #dbad6a;
+    border-radius: .3em;
+}
+
+figcaption {
+    text-align: center;
+    width:420px;
+    overflow-wrap: normal;
+    margin-left: 165px;
+    font-size: 20px;
+    color: #ecc384;
+}
+
+.right {
+    overflow-wrap: normal;
+    margin: 80px 165px;
+    font-size: 28px;
+
+}
+
+#pointcrow {
+    margin-top: 80px;
+    margin-left: 165px;
+    width: 400px;
+    border: thick solid #dbad6a;
+    border-radius: .3em;
+}
+
+#video {
+    margin-top: 80px;
+    text-align: center;
+}
+
+#youtube {
+    margin-right:165px;
+    margin-left: 165px;
+    font-size: 28px;
+    text-align: center;
+}
+
+#end {
+    color:#f0d7b4;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#links {
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+}

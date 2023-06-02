@@ -1,0 +1,56 @@
+table.t1 {
+    border: 2px solid #c2720a;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 38px;
+}
+
+table.t1 td {
+    width: 500px;
+    height: 50px;
+    border: 2px solid #c2720a;
+    text-align:center;
+}
+
+#row1 {
+    background-color:navajowhite;
+}
+
+#image {
+    background-image: url(../Images/rainbow-img.jpeg);
+    height:100px;
+    background-size: cover;
+    background-position: center;
+    color:linen;
+}
+
+table.t1 tr:not(.title) {
+    height: 90px;
+}
+
+caption {
+    font-size: 60px;
+    font-style: italic;
+    font-weight:bold;
+}
+
+img {
+    width:500px;
+    height:85px;
+}
+
+table.t2 {
+    border: 3px dashed lightgreen;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 38px;
+}
+
+table.t2 td {
+    width: 300px;
+    height: 30px;
+    border: 2px solid forestgreen;
+    text-align: center;
+}

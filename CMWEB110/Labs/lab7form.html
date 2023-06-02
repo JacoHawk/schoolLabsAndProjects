@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Jacob Hawkins - Lab 7</title>
+
+    <meta name="description" content="This is Lab 7 for CMWEB 110" />
+    <meta charset="utf-8"/>
+    
+    <link href="Assets/CSS/lab7.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+
+<h1>Lab 7 - Form</h1>
+<br>
+<hr>
+<br>
+<form action="http://www.webclassesonline.net/cgi-bin/bwhformmail3.pl" method="post">
+
+    <input type="hidden" name="recipient" value="jh719d@lab.icc.edu">
+
+    <label for="name">
+        Name:
+    </label> <br>
+    <input type="text" id="name" name="name" placeholder="First Name, Last Name"> <br>
+
+    <label for="email">
+        Email:
+    </label> <br>
+    <input type="text" id="email" name="email" placeholder="Email Address"> <br>
+
+    <label for="subject">
+        Subject:
+    </label> <br>
+    <input type="text" id="subject" name="subject" placeholder="Subject"> <br>
+
+    <label for="body">
+        Body:
+    </label> <br>
+    <textarea rows="7" cols="100"> </textarea>
+
+    <br>
+
+    <fieldset>
+        <legend>Question 1</legend>
+    <h2 class="question">Which of these food groups do you most enjoy? (select all that apply)</h2>
+
+    <label for="check-veg" class="food-group">
+        Veggies :
+    </label>
+    <input type="checkbox" id="check-veg" name="check-veg"> <br>
+
+    <label for="check-fruits" class="food-group">
+        Fruits :
+    </label>
+    <input type="checkbox" id="check-fruits" name="check-fruits"> <br>
+
+    <label for="check-dairy" class="food-group">
+        Dairy :
+    </label>
+    <input type="checkbox" id="check-dairy" name="check-dairy"> <br>
+
+    <label for="check-prot" class="food-group">
+        Protein (meat, seafood, nuts, etc.) :
+    </label>
+    <input type="checkbox" id="check-prot" name="check-prot"> <br>
+
+    <label for="check-grain" class="food-group">
+        Grains (bread, pretzels, pasta, etc.) :
+    </label>
+    <input type="checkbox" id="check-grain" name="check-grain"> <br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Question 2</legend>
+    <h2 class="question">Which smartphone operating system do you prefer?</h2>
+    <label for="ios">
+        iOS (iPhone) :
+    </label>
+    <input type="radio" name="os" id="ios" value="iOS"> <br>
+    <label for="android">
+        Android OS (Google Pixel, Samsung, etc.):
+    </label>
+    <input type="radio" name="os" id="android" value="android"> <br>
+    <label for="other">
+        Other :
+    </label>
+    <input type="radio" name="os" id="other" value="other"> <br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Question 3</legend>
+    <h2 class="question">Which computer operating system do you use the most?</h2>
+    <label for="os">
+        Choose one:
+    </label>
+    <select id="os" name="os">
+        <optgroup label="Operating Systems">
+        <option>Windows</option>
+        <option>MacOS</option>
+        <option>Linux</option>
+        <option>Other</option>
+        </optgroup>
+    </select>
+    </fieldset>
+
+
+
+
+
+    <br>
+    <input type="reset" value="RESET"> <br> <br>
+    <input type="button" name="submit-form" id="submit-button" value="SUBMIT">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
