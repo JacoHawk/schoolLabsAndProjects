@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Jacob Hawkins - Lab 4</title>
+            
+        <meta name="description" content="This is Lab 4 for CMWEB 150" />
+        <meta charset="utf-8"/>
+                
+        <link href="Assets/CSS/lab4.css" type="text/css" rel="stylesheet" />
+                
+    </head>
+    <body>
+
+    <h1 id="intro"> 
+        Jacob Hawkins - Lab 4, CMWEB 150 
+    </h1>
+
+    <hr>
+
+    <table summary="The data in this table represents the length of 10 different trails each with different standards marked by a letter ranging A through F. The total mileage of each trail is listed at the end of each trail standard.">
+        <caption>
+            Trail Mileage Summary by Planning Unit and Standard
+        </caption>
+    <thead>
+        <tr>
+            <th id="plan" class="toplevel" scope="col" rowspan="2">Planning Unit</th>
+            <th id="stand" class="toplevel" scope="colgroup" colspan="6">Trail Standard</th>
+            <th id="total" class="toplevel ww" scope="col" rowspan="2">Total Mileage in Planning Unit</th>
+        </tr>
+        <tr>
+            <th headers="stand" id="A" class="toplevel" scope="col">A</th>
+            <th headers="stand" id="B" class="toplevel" scope="col">B</th>
+            <th headers="stand" id="C" class="toplevel" scope="col">C</th>
+            <th headers="stand" id="D" class="toplevel" scope="col">D</th>
+            <th headers="stand" id="E" class="toplevel" scope="col">E</th>
+            <th headers="stand" id="F" class="toplevel" scope="col">F</th>
+        </tr>
+    </thead>    
+    <tbody>
+        <tr>
+            <td headers="plan">1. Front Range</td>
+            <td headers="stand A">1.2</td>
+            <td headers="stand B">5.5</td>
+            <td headers="stand C">28.4</td>
+            <td headers="stand D">48.4</td>
+            <td headers="stand E">10.5</td>
+            <td headers="stand F">6.3</td>
+            <td headers="plan total">100.3</td>
+        </tr>
+        <tr>
+            <td headers="plan">2. Longs Peak</td>
+            <td headers="stand A">1.4</td>
+            <td headers="stand B">0</td>
+            <td headers="stand C">0</td>
+            <td headers="stand D">22.9</td>
+            <td headers="stand E">3.7</td>
+            <td headers="stand F">1.8</td>
+            <td headers="plan total">29.8</td>
+        </tr>
+        <tr>
+            <td headers="plan">3. Wild Basin</td>
+            <td headers="stand A">0</td>
+            <td headers="stand B">0</td>
+            <td headers="stand C">0.3</td>
+            <td headers="stand D">27.1</td>
+            <td headers="stand E">11.1</td>
+            <td headers="stand F">1.8</td>
+            <td headers="plan total">40.3</td>
+        </tr>
+        <tr>
+            <td headers="plan">4. West Valleys</td>
+            <td headers="stand A">0</td>
+            <td headers="stand B">0</td>
+            <td headers="stand C">0.6</td>
+            <td headers="stand D">46.3</td>
+            <td headers="stand E">16.7</td>
+            <td headers="stand F">4.1</td>
+            <td headers="plan total">67.7</td>
+        </tr>
+        <tr>
+            <td headers="plan">5. Never Summer</td>
+            <td headers="stand A">0</td>
+            <td headers="stand B">0</td>
+            <td headers="stand C">0</td>
+            <td headers="stand D">21.4</td>
+            <td headers="stand E">4.0</td>
+            <td headers="stand F">3.3</td>
+            <td headers="plan total">28.7</td>
+        </tr>
+        <tr>
+            <td headers="plan">6. Black Canyon/ Roaring River</td>
+            <td headers="stand A">0.3</td>
+            <td headers="stand B">0</td>
+            <td headers="stand C">0</td>
+            <td headers="stand D">13.2</td>
+            <td headers="stand E">13.4</td>
+            <td headers="stand F">1.5</td>
+            <td headers="plan total">28.4</td>
+        </tr>
+        <tr>
+            <td headers="plan">7. Trail Ridge</td>
+            <td headers="stand A">0.7</td>
+            <td headers="stand B">0.5</td>
+            <td headers="stand C">0</td>
+            <td headers="stand D">0</td>
+            <td headers="stand E">5.9</td>
+            <td headers="stand F">5.0</td>
+            <td headers="plan total">12.1</td>
+        </tr>
+        <tr>
+            <td headers="plan">8. Kawuneeche</td>
+            <td headers="stand A">0.8</td>
+            <td headers="stand B">0</td>
+            <td headers="stand C">8.7</td>
+            <td headers="stand D">1.3</td>
+            <td headers="stand E">0</td>
+            <td headers="stand F">0.2</td>
+            <td headers="plan total">11</td>
+        </tr>
+        <tr>
+            <td headers="plan">9. North Fork</td>
+            <td headers="stand A">0</td>
+            <td headers="stand B">0</td>
+            <td headers="stand C">0</td>
+            <td headers="stand D">5.2</td>
+            <td headers="stand E">8.0</td>
+            <td headers="stand F">0</td>
+            <td headers="plan total">13.2</td>
+        </tr>
+        <tr>
+            <td headers="plan">10. Poudre</td>
+            <td headers="stand A">0</td>
+            <td headers="stand B">0</td>
+            <td headers="stand C">0</td>
+            <td headers="stand D">0</td>
+            <td headers="stand E">17.7</td>
+            <td headers="stand F">1.0</td>
+            <td headers="plan total">18.7</td>
+        </tr>
+        <tr>
+            <td headers="plan">Total Mileage by Standard</td>
+            <td headers="stand A">4.4</td>
+            <td headers="stand B">6.0</td>
+            <td headers="stand C">38</td>
+            <td headers="stand D">185.8</td>
+            <td headers="stand E">91</td>
+            <td headers="stand F">25</td>
+            <td headers="plan total" class="total">350.2 total parkwide</td>
+        </tr>
+    </tbody>
+    </table>
+
+
+    </body>
+</html>

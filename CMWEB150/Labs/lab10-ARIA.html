@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Jacob Hawkins - Lab 10</title>
+            
+    <meta name="description" content="This is Lab 10 for CMWEB 150" />
+    <meta charset="utf-8"/>
+                
+    <link href="Assets/CSS/lab10.css" type="text/css" rel="stylesheet" />
+                
+</head>
+<body>
+<header>
+    <h1>Lab 10 - Form</h1>
+</header>
+    <br>
+    <hr>
+    <br>
+    <main>
+    <form action="http://www.webclassesonline.net/cgi-bin/bwhformmail3.pl" method="post">
+    
+        <input type="hidden" name="recipient" value="jh719d@lab.icc.edu">
+    
+        <label for="name">
+            Name:
+        </label> <br>
+        <input type="text" id="name" name="name" placeholder="First Name, Last Name" autocomplete="name" aria-required="true"> <br>
+    
+        <label for="email">
+            Email:
+        </label> <br>
+        <input type="text" id="email" name="email" placeholder="Email Address" autocomplete="email" aria-required="true"> <br><br>
+    
+        <fieldset>
+        <legend class="question">Which of these food groups do you most enjoy? (select all that apply)</legend>
+    
+        <label for="veggies">
+            Veggies :
+        </label>
+        <input type="checkbox" id="veggies" name="food-group"> <br>
+    
+        <label for="fruits">
+            Fruits :
+        </label>
+        <input type="checkbox" id="fruits" name="food-group"> <br>
+    
+        <label for="dairy">
+            Dairy :
+        </label>
+        <input type="checkbox" id="dairy" name="food-group"> <br>
+    
+        <label for="protein">
+            Protein (meat, seafood, nuts, etc.) :
+        </label>
+        <input type="checkbox" id="protein" name="food-group"> <br>
+    
+        <label for="grains">
+            Grains (bread, pretzels, pasta, etc.) :
+        </label>
+        <input type="checkbox" id="grains" name="food-group"> <br>
+        </fieldset>
+    
+        <br>
+    
+        <fieldset>
+        <Legend class="question">Which smartphone operating system do you prefer? (Select one)</Legend>
+        <label for="iPhone">
+            iOS (iPhone) :
+        </label>
+        <input type="radio" name="operating-system" id="iPhone" value="iOS/iPhone"> <br>
+        <label for="android">
+            Android OS (Google Pixel, Samsung, etc.):
+        </label>
+        <input type="radio" name="operating-system" id="android" value="android"> <br>
+        <label for="other">
+            Other :
+        </label>
+        <input type="radio" name="operating-system" id="other" value="other"> <br>
+        </fieldset>
+    
+        <br>
+    
+        <fieldset>
+        <legend class="question">Which computer operating system do you use the most?</legend>
+        <label for="computer-system">
+            Choose one:
+        </label>
+        <select id="computer-system" name="select">
+            <option value="1">Windows</option>
+            <option value="2">MacOS</option>
+            <option value="3">Linux</option>
+            <option value="4">Other</option>
+            </optgroup>
+        </select>
+        </fieldset>
+    
+    
+        <br>
+        <input type="reset" name="reset" value="Reset the Form"> <br> <br>
+        <input type="button" name="submit-form" value="Submit the Form"><br> <br>
+        <a href="lab10.html">Page with no ARIA labels</a>
+    </form>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

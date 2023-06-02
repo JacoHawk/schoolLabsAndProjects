@@ -1,0 +1,121 @@
+body {
+    background: #222930;
+    font-family: Arial, Helvetica, sans-serif;
+	color:#e9e9e9
+}
+
+#navbar ul { 
+	margin: 0; 
+    margin-top: 3rem;
+	padding: 5px; 
+	list-style-type: none; 
+	text-align: center; 
+	background-color: #222930; 
+} 
+ 
+#navbar ul li {  
+	display: inline; 
+    font-size: 20px;
+    margin-inline: 3rem;
+} 
+ 
+#navbar ul li a { 
+	text-decoration: none; 
+	padding: .2em 1em; 
+	color: #fff; 
+	background-color: #222930; 
+    border-radius: 1rem;
+    border: thin solid #e9e9e9;
+} 
+ 
+#navbar ul li a:hover { 
+	color: #000; 
+	background-color: #fff; 
+} 
+
+#navbar #active a:hover {
+    color: #2b4376;
+}
+
+#navbar #active a{
+    text-decoration: none; 
+	padding: .2em 1em; 
+	color: #222930; 
+	background-color: #e9e9e9; 
+}
+
+#title-head h1 {
+	text-align: center;
+	margin-top: 3rem;
+	font-size: 48px;
+	color:#222930;
+	background-color: #e9e9e9;
+	max-width: fit-content;
+	margin:auto;
+	margin-top: 4rem;
+	margin-bottom:3rem;
+	border-radius: .4rem;
+}
+
+hr {
+	width:40%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+}
+
+caption {
+    font-size:38px;
+    margin: 3rem auto 2rem;
+    font-weight: bold;
+}
+
+th:not(.wp) {
+    text-align: center;
+    color: #222930;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #fde1bd;
+    padding: 10px;
+}
+
+td, .wp {
+    font-size: 24px;
+    padding: 10px;
+    border: thin solid #fad29f;
+    color:#E9E9E9;
+}
+
+tr:nth-child(odd) {
+    background-color: #252835;
+}
+
+tr:nth-child(even) {
+    border: thin solid #fad29f;
+}
+
+#liked {
+    width: 400px;
+}
+
+#dis {
+    width: 400px;
+}
+
+.wp {
+    font-weight:bold;
+    text-align: left;
+    background-color: #292c3d;
+}
+
+table td:nth-child(2),
+table td:nth-child(3) {
+    text-align: center;
+}
+
+table td:nth-child(odd), .wp {
+    color:#fffbdb;
+}

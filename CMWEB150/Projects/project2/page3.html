@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Jacob Hawkins - Page 3, Project 2</title>
+            
+    <meta name="description" content="This is Page 3 of Project 2 for CMWEB 150" />
+    <meta charset="utf-8"/>
+                
+    <link href="Assets/CSS/page3.css" type="text/css" rel="stylesheet" />
+                
+</head>
+<body>
+    <nav>
+        <div id="navbar"> 
+            <ul> 
+              <li><a href="page1.html">Page 1</a></li> 
+              <li><a href="page2.html">Page 2</a></li> 
+              <li id="active"><a href="page3.html">Page 3</a></li> 
+              <li><a href="page4.html">Page 4</a></li> 
+              <li><a href="page5.html">Page 5</a></li> 
+              <li><a href="page6.html">Page 6</a></li> 
+            </ul> 
+          </div> 
+      </nav>
+    
+      <header>
+        <div id="title-head">
+          <h1>CMWEB 150: Project 2, Page 3</h1>
+          
+    
+        </div>
+      </header>
+      <hr>
+      <main>
+
+        <h2 class="title">
+        Accessibility Form<br>*All fields are required*
+        </h2>
+        <form>
+            <label for="fname">Your First Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="John" size="20" required><br><br><br>
+    
+            <label for="lname">Your Last Name:</label><br>
+            <input type="text" id="lname" name="fname" placeholder="Doe" size="20" required><br><br><br>
+    
+            <label for="email">Email address:</label><br>
+            <input type="email" id="email" name="email" placeholder="youremail@provider.com" size="30" required><br><br><br>
+    
+            <label for="affiliation">Your school or business affiliation:</label><br>
+            <textarea id="affiliation" name="affiliation" cols="35" rows="1"></textarea><br><br><br>
+    
+            <label for="city">Choose the city in which you reside: (type N/A)</label><br>
+            <select id="city" name="city" size="8" required>
+                <option value="peoria">Peoria</option>
+                <option value="pekin">Pekin</option>
+                <option value="morton">Morton</option>
+                <option value="canton">Cantion</option>
+                <option value="dunlap">Dunlap</option>
+                <option value="tremont">Tremont</option>
+                <option value="washington">Washington</option>
+                <option value="none">None of the above</option>
+            </select><br><br><br>
+    
+            <label for="suggestions">Do you have any suggestions for my accessible form?<br>(You are not required to answer this)</label><br>
+            <textarea id="suggestions" name="suggestions" cols="50" rows="8"></textarea><br><br>
+    
+            <input id="submit" type="submit" value="submit">
+            <input id="rest" type="reset" value="reset">
+    
+        </form>
+
+
+
+
+    </main>
+    </body>
+    </html>

@@ -1,0 +1,95 @@
+body {
+    background: #222930;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e9e9e9;
+}
+
+#intro {
+    text-align: center;
+    font-size: 54px;
+    color: #222930;
+    background-color: #E9E9E9;
+    margin: auto;
+    margin-top: 3em;
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    max-width: fit-content;
+    border-radius: 1em;
+    margin-bottom: 85px;
+}
+
+hr {
+    max-width: 50%;
+    min-width: 10%;
+    color:#e9e9e9;
+}
+
+table {
+    margin-left:15%;
+    margin-right: 15%;
+    margin-bottom: 130px;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 85px;
+    margin-bottom: 10px;
+}
+
+.toplevel {
+    font-size: 30px;
+    border:2px solid #c7c7c7;
+    background-color: #383d49;
+    height: 50px;
+    word-wrap: break-word;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.ww {
+    width: 19%;
+}
+
+
+td {
+    text-align: center;
+    border:2px solid #c7c7c7;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+td:nth-child(1) {
+    text-align: left;
+    padding-left: 10px;
+    word-wrap: break-word;
+    width:15%;
+}
+
+#total-mileage {
+    font-size: 20px;
+    font-weight:normal;
+    text-align: left;
+}
+
+.total {
+    font-style: italic;
+    font-weight: bold;
+}
+
+tr {
+    background-color: #1d252e;
+    height: 50px;
+}
+
+tr:nth-child(odd) {
+    background-color: #253e57;
+}
