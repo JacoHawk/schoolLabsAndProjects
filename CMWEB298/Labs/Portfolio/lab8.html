@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lab8.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&family=Fira+Code:wght@300;400&family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pets Galore</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="lab4.html">Portfolio</a></li>
+      </ul>
+    </nav>
+
+    <form action="#">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="inquiry">Type of Inquiry:</label>
+      <select id="inquiry" name="inquiry" required>
+        <option value="">Please select</option>
+        <option value="General Inquiry">General Inquiry</option>
+        <option value="Pet Care Inquiry">Pet Care Inquiry</option>
+        <option value="Product Inquiry">Product Inquiry</option>
+        <option value="Animal or Product Availability Inquiry">Animal or Product Availability Inquiry</option>
+        <option value="Other Inquiry">Other Inquiry</option>
+      </select>
+
+      <fieldset>
+        <legend>Preferred Method of Contact:</legend>
+        <label><input type="radio" name="contact-method" value="phone" />Phone</label>
+        <label><input type="radio" name="contact-method" value="email" />Email</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What animal are you inquiring about?</legend>
+        <label><input type="checkbox" name="animal" value="Cat" />Cat</label>
+        <label><input type="checkbox" name="animal" value="Dog" />Dog</label>
+        <label><input type="checkbox" name="animal" value="Ferret" />Ferret</label>
+        <label><input type="checkbox" name="animal" value="Guinea Pig" />Guinea Pig</label>
+        <label><input type="checkbox" name="animal" value="Hamster" />Hamster</label>
+        <label><input type="checkbox" name="animal" value="Rat" />Rat</label>
+        <label><input type="checkbox" name="animal" value="Lizard" />Lizard</label>
+        <label><input type="checkbox" name="animal" value="Snake" />Snake</label>
+        <label><input type="checkbox" name="animal" value="Turtle" />Turtle</label>
+        <label><input type="checkbox" name="animal" value="Fish" />Fish</label>
+        <label><input type="checkbox" name="animal" value="None" />None</label>
+        <label for="other-animal">Other:</label>
+        <input type="text" id="other-animal" name="other-animal" />
+      </fieldset>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

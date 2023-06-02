@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wedding Guest Seating</title>
+  <script>
+    function validateForm() {
+      var lastName = document.forms["guestForm"]["last_name"].value;
+      if (lastName == "") {
+        alert("Please enter your last name.");
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Wedding Guest Seating</h1>
+  <form name="guestForm" method="post" onsubmit="return validateForm()" action="seating.php">
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+ul {
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  font-size: 20px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  /* Section styles */
+  section {
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .responsive-table {
+    overflow-x: auto;
+  }
+
+  /* Adjust the table, th, and td elements for smaller screens */
+  table,
+  th,
+  td {
+    font-size: 14px; /* Reduce the font size */
+  }
+
+  /* Increase the table's padding for easier touch interactions */
+  th,
+  td {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,19 @@
+/* Footer styles */
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#warning {
+  color: rgb(219, 124, 124);
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  /* Footer styles */
+  footer {
+    padding: 5px;
+  }
+}

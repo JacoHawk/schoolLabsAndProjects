@@ -1,0 +1,28 @@
+h3 {
+  text-decoration: underline;
+  margin: 1rem auto;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: thin solid rgba(0, 0, 0);
+}
+
+.image-container {
+  width: 65%;
+  margin: auto;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 5px;
+    width: 100%;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+}

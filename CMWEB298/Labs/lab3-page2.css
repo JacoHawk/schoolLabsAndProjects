@@ -1,0 +1,152 @@
+body {
+  background-color: #e9e9e9;
+}
+
+.content {
+  background-color: #0f2f4e;
+  margin: 60px;
+  height: fit-content;
+  padding: 4rem;
+  border-radius: 10px;
+}
+
+#nav {
+  display: inline;
+  width: auto;
+  text-align: center;
+  padding-inline-start: 0;
+}
+
+.nav {
+  display: inline;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav > a {
+  color: #000000;
+  text-decoration: none;
+  background-color: #8dc0f4;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: thin solid #1c2d65;
+  transition: 0.7s;
+  line-height: 55px;
+}
+
+.nav > a:hover {
+  color: #e9e9e9;
+  background-color: #01172d;
+  text-decoration: underline;
+  transition: 0.7s;
+}
+
+nav {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  text-align: left;
+  margin-top: 50px;
+}
+
+header {
+  padding: 0.9rem;
+  background-color: #e9e9e9;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: fit-content;
+}
+
+#title {
+  grid-column-start: 2;
+  padding-left: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: #1e669d;
+  font-size: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+}
+
+figure {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+figcaption {
+  color: #e9e9e9;
+}
+
+figcaption > a {
+  color: #8dc0f4;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 6rem;
+  grid-row-gap: 0px;
+}
+
+article {
+  background-color: #e9e9e9;
+  color: #0f2f4e;
+  border-radius: 15px;
+  padding: 15px;
+}
+article > h2 {
+  font-size: 29px;
+}
+article > p {
+  font-size: 26px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  background-color: #dbdbdb;
+  padding-bottom: 30px;
+  position: absolute;
+  left: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.links {
+  margin: 20px;
+  padding: 10px;
+}
+
+h6 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.links > p {
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+li {
+  font-size: 20px;
+}
+
+li > a {
+  color: #222930;
+}

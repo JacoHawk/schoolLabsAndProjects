@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lab 6, CMWEB 298" />
+    <title>CSS Media Queries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Nunito+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="lab6.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Media Queries</h1>
+    </header>
+    <div class="container">
+      <div class="column b1">
+        <div class="name n1">What are Media Queries?</div>
+        <div class="body p1">
+          <p class="body-p">
+            Media query is a CSS technique introduced in CSS3. It allows CSS styles to be applied conditionally depending on certain parameters. These
+            parameters include media types, such as screen or print, and can target different characteristics of the user's device. The include
+            orientation of the device, the screen width or height, whether the device supports hovering, and many more. With media queries, developers
+            can make very complex CSS rules that make sure the viewing experience is the same for every possible device.
+          </p>
+        </div>
+      </div>
+      <div class="column b2">
+        <div class="name n2">How to use Media Queries in CSS</div>
+        <div class="body p2">
+          <p class="body-p">
+            Media queries can be applied a few different ways. One way is to put a media query in the head of an HTML page. By doing this, we can link
+            certain stylesheets depending on what size the screen is. By using something like
+            <span class="code">&lt;link rel="stylesheet" href="small.css" media="(max-width: 600px)"&gt;</span>, small screens under 600 pixels wide
+            will get the "small.css" file applied.<br />
+            For example, for devices over 1024 pixels wide, the picture will be the CSS3 logo. It will change to the HTML5 logo for devices under 1024
+            pixels wide.<br />
+            This is a prime example of how media queries can really spruce up a webpage, but it is only a small trick in a sea of possibilities for
+            media queries.
+          </p>
+        </div>
+      </div>
+      <div class="column b3">
+        <div>
+          <img id="html-logo" src="../Images/html.png" alt="html Logo" />
+          <img id="css-logo" src="../Images/css.png" alt="CSS3 Logo" />
+        </div>
+      </div>
+
+      <div class="column b4">
+        <div class="name n4">Using Media Queries for Printing</div>
+        <div class="body p4">
+          <p class="body-p">
+            Another thing media queries are great for is printing. When web pages are printed, some aspects of the web page need to be changed. This
+            is because web pages tend to have a lot of color and some elements are not visible on physical paper.<br />When there is a link on a
+            webpage, users can only see that link when they click it to go visit the linked page. This is an issue for printed webpages. To fix it, we
+            can use a media query for printed pages and change up the style for the printed result.<br />
+            We can use <span class="code">@media print</span> in our CSS sheet to target HTML content when the page is being printed. As an example, the hyperlink will include the full URL inside of parenthesis when printed:
+            <a class="no-print" href="https://fonts.google.com/">Google Fonts</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lab 5, CMWEB 298" />
+    <title>CSS Fonts and Grid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mynerve&family=Phudu:wght@300&family=Rubik&family=Source+Code+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="lab5.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Overview of CSS Grid</h1>
+    </header>
+    <!-- Container for left column -->
+    <div class="container">
+      <div class="column b1">
+        <div class="name">What is CSS Grid</div>
+        <div class="body p1">
+          <p class="body-p p1">
+            CSS Grid is a grid layout system for CSS that relies on a series of columns and rows. It replaces the old trick of using tables as layouts
+            for a much more dynamic and accessible layout system. The grid columns and rows can be set to different heights and widths depending on
+            the screen size. This allows developers to create robust and flexible layouts for any type of content.<br /><br /><a
+              href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+              target="_blank"
+              >CSS-Tricks.com</a
+            >
+            has a comprehensive guide of CSS grid that covers everything you need to know. It starts with simple concepts and moves to things like
+            grid animations.
+          </p>
+        </div>
+      </div>
+      <!-- Container for middle column -->
+      <div class="column b2">
+        <div class="name">How to use CSS Grid</div>
+        <div class="body">
+          <p class="body-p">
+            CSS grid is fairly easy to use with just a few steps to get a simple grid laid out. First, we start with a container. This will be the
+            parent div where the grid will reside. Next, we place the children (or the grid contents) inside of the container. <br /><br />That's it
+            for the HTML! Now we head over to the CSS where things get a bit more complex. The container should be set to
+            <span class="code">display: grid</span> to display the children in a grid layout. We can then change up the columns and rows using
+            <span class="code">grid-template-columns</span> or <span class="code">grid-template-rows</span>. All we have to do is simply put widths or
+            heights of the templates using whatever unit we'd like. For example, if we want 5 columns and 2 rows, we can do
+            <span class="code">grid-template-columns: 50px 30px 40px 10px 40px</span> and
+            <span class="code">grid-template-rows: repeat(2, 20px)</span>. For the columns, we're individually defining each column's width. For the
+            rows, we're utilizing a function <span class="code">repeat()</span> which allows us to say we want 2 rows of the same height of 20px.<br /><br />
+            For the children inside of the container, we can set their positions to specific plots on the grid using grid-area. Grid-area can set the
+            grid-row-start / grid-column-start / grid-row-end / grid-column-end properties all in one property.
+            <span class="code">grid-area: 1 / 2 / 3 / 3</span> is how it would look if we want an element to start at the first row and end at the
+            third row and also start at the second column and end at the third column.<br /><br /><a
+              href="https://www.w3schools.com/css/css_grid_container.asp"
+              target="_blank"
+              >W3Schools</a
+            >
+            has page full of examples and information on how to make a grid container and how to set the positions of elements.<br />That's pretty
+            much it for the basics! You can then add some media queries and change the layout based on screen size to make responsive pages.
+          </p>
+        </div>
+      </div>
+      <!-- Container for right column -->
+      <div class="column b3">
+        <div class="name">Resources</div>
+        <div class="body">
+          <p class="body-p">Below is a list of resources of where to learn more about CSS Grid and its use cases.</p>
+          <ul>
+            <li><a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">W3Schools</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://learncssgrid.com/" target="_blank">LearnCSSGrid.com</a></li>
+            <li><a href="https://cssgrid-generator.netlify.app/" target="_blank">CSS Grid Generator Tool</a></li>
+            <li><a href="https://www.youtube.com/watch?v=uuOXPWCh-6o" target="_blank">CSS Grid in 100 Seconds by Fireship</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

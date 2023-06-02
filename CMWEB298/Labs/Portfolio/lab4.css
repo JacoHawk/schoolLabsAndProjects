@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  font-family: "Libre Baskerville", serif;
+  color: #e9e9e9;
+}
+
+body {
+  background: linear-gradient(-45deg, #ef8f72, #e83b7d, #0ca3db, #13e3b2);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 40%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  text-align: center;
+  padding: 1em;
+  color: #e9e9e9;
+  height: 30%;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  display: grid;
+  margin: auto;
+  height: fit-content;
+  margin-bottom: 5rem;
+  background-color: rgba(34, 41, 48, 0.4);
+}
+
+section {
+  padding: 1em;
+  line-height: 24px;
+}
+
+section li {
+  line-height: 36px;
+}
+
+#projects > ul {
+  list-style-type: none;
+}
+
+#projects > ul > li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#projects > ul > li > a {
+  color: #f9f2a6;
+  background-color: #222930bc;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.code {
+  background-color: black;
+  font-size: 90%;
+  padding: 2px;
+  color: #f9f2a6;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+  body {
+    background: linear-gradient(-45deg, #ef8f72, #e83b7d, #0ca3db, #13e3b2);
+    background-size: 400% 700%;
+    animation: gradient 30s ease infinite;
+  }
+
+  main {
+    grid-template-columns: auto;
+    padding: 3px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  main {
+    grid-template-columns: auto;
+    padding: 3px;
+    width: 580px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  main {
+    width: 740px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  main {
+    width: 980px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #projects {
+    grid-area: 2 / 1 / 2 / 3;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  #projects > ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem 1rem;
+  }
+
+  #projects > ul > li > a {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #projects > ul > li > a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #222930;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #projects > ul > li > a:hover {
+    color: #e9e9e9;
+    border-color: #222930;
+  }
+
+  #projects > ul > li > a::before {
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  main {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    padding: 25px;
+    max-width: 90%;
+  }
+}
