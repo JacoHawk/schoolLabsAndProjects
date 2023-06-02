@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="Assets/CSS/page4.css" type="text/css" rel="stylesheet" />
+    <title>Page 4, Project 1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  </head>
+  <body>
+    <nav id="funct">
+      <ul id="nav">
+        <li><a href="page1.html">Page 1</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page5.html">Page 5</a></li>
+      </ul>
+    </nav>
+    <h1 id="intro">Page 4, Project 1</h1>
+    <div id="summary">
+      <h2>
+        This page's purpose is to demonstrate the difference between absolute and relative positioning. It also has a neat little random color
+        generating button as well, just for fun!<br />Click the Change Color button to change the background to a random color. Click reset to reset
+        back to black.<br />You can also click the positioning buttons to change the positioning of the nav bar to see the effects.
+      </h2>
+    </div>
+    <div id="clr">
+      <button id="btnColor">Change color</button><br />
+      <button id="rstColor">Reset color</button><br />
+      <button id="rel">Change to Relative Positioning</button>
+      <button id="abs">Change to Absolute Positioning</button>
+    </div>
+
+    <script>
+      const btnColor = document.getElementById("btnColor");
+
+      function random(number) {
+        return Math.floor(Math.random() * (number + 1));
+      }
+
+      btnColor.onclick = function () {
+        const rndCol = "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+        document.body.style.backgroundColor = rndCol;
+      };
+
+      const rstColor = document.getElementById("rstColor");
+
+      rstColor.onclick = function () {
+        document.body.style.backgroundColor = "#222930";
+      };
+
+      const rel = document.getElementById("rel");
+      rel.onclick = function() {
+        document.getElementById('funct').style.cssText = 'position: relative;'
+      }
+
+      const abs = document.getElementById("abs");
+      abs.onclick = function() {
+        document.getElementById('funct').style.cssText = 'position: absolute;'
+      }
+    </script>
+  </body>
+</html>

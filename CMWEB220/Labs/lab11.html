@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="Assets/CSS/lab11.css" type="text/css" rel="stylesheet" />
+    <title>Lab 11, CMWEB 220</title>
+  </head>
+  <body>
+    <p>Note: This example does not work in Firefox. Refresh to restart animation.</p>
+    <svg id="box" width="500" height="500">
+      <rect id="rec" x="300" y="100" width="300" height="100" style="fill: lime">
+        <animate attributeName="x" attributeType="XML" begin="0s" dur="6s" fill="freeze" from="300" to="0" />
+        <animate attributeName="y" attributeType="XML" begin="0s" dur="6s" fill="freeze" from="100" to="0" />
+        <animate attributeName="width" attributeType="XML" begin="0s" dur="6s" fill="freeze" from="300" to="800" />
+        <animate attributeName="height" attributeType="XML" begin="0s" dur="6s" fill="freeze" from="100" to="300" />
+        <animate attributeName="fill" attributeType="CSS" from="green" to="orange" begin="0.1s" dur="3s" fill="freeze" />
+        <animate attributeName="fill" attributeType="CSS" from="orange" to="red" begin="3.1s" dur="1s" fill="freeze" />
+        <animate attributeName="fill" attributeType="CSS" from="red" to="blue" begin="4.1s" dur="1.9s" fill="freeze" />
+        <animate attributeName="height" attributeType="XML" begin="6s" dur="3s" fill="freeze" from="300" to="100" />
+        <animate attributeName="width" attributeType="XML" begin="6s" dur="3s" fill="freeze" from="800" to="300" />
+        <animate attributeName="x" attributeType="XML" begin="6s" dur="4s" fill="freeze" from="0" to="300" />
+        <animate attributeName="y" attributeType="XML" begin="6s" dur="4s" fill="freeze" from="0" to="100" />
+        <animate attributeName="fill" attributeType="CSS" from="orange" to="green" begin="9s" dur="1s" fill="freeze" />
+        <animate attributeName="fill" attributeType="CSS" from="red" to="orange" begin="8s" dur="1s" fill="freeze" />
+        <animate attributeName="fill" attributeType="CSS" from="blue" to="red" begin="6s" dur="1.9s" fill="freeze" />
+      </rect>
+    </svg>
+  </body>
+</html>

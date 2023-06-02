@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="Assets/CSS/page1.css" type="text/css" rel="stylesheet" />
+    <title>Page 1, Project 1</title>
+  </head>
+  <body>
+    <nav>
+      <ul id="nav">
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page4.html">Page 4</a></li>
+        <li><a href="page5.html">Page 5</a></li>
+      </ul>
+    </nav>
+
+    <div class="flex-column-container">
+      <main>
+        <div id="p1">
+          <h1>Navigation Links</h1>
+          <p>
+            Over on the left, I have a set of navigation links to the other pages in this project. These links are nested as items in an unordered
+            list with the "list-style" set to "none". It's a simple, vertical navbar that is very easy to make. For the styling, I added a color
+            transition when hovering over the links. The background of the buttons fades from a light blue to a dark blue, and then back to the light
+            blue. This is done using the CSS "transition" element. I also set the "position" to "fixed" for the navbar so that it stays in the same
+            place even when scrolling.
+          </p>
+        </div>
+        <div id="p2">
+          <h1>Page Layout</h1>
+          <p>
+            As for the page layout, I have 4 different sections laid out using Flexbox. The section on the left is used for the navbar, and the rest
+            of the sections are just stacked on top of eachother. I like flexbox because it makes it easy to create multiple sections on a page with
+            little effort.
+          </p>
+        </div>
+        <div id="p3">
+          <h1>Background Color</h1>
+          <p>
+            For the background color, I'm using an infinite looping keyframes animation that goes from dark green to light green and then back again. To do this, I made a keyframes animation called backgroundLoop. Inside the keyframes animation, I had 8 different percentages ranging from 0% to 100%. At each percentage, I'd change the background color to a different shade of green. I then styled the body using this keyframes animation by simply saying "animation-name: backgroundLoop" and then added an animation duration.
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

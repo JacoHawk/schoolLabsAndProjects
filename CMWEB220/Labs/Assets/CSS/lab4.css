@@ -1,0 +1,112 @@
+body {
+  background-color: #21659d;
+  color: black;
+}
+
+span {
+  font-style: italic;
+}
+
+.skip-to-content-link {
+  display: none;
+}
+
+nav {
+  text-align: center;
+}
+
+ul {
+  display: inline;
+  width: auto;
+  text-align: center;
+  padding-inline-start: 0;
+}
+
+li {
+  display: inline;
+  text-align: center;
+  font-size: 28px;
+}
+
+li > a {
+  color: #e9e9e9;
+  text-decoration: none;
+  background-color: #104982;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: thick solid #1c2d65;
+  transition: 0.7s;
+}
+
+li > a:hover {
+  color: #e9e9e9;
+  background-color: #01172d;
+  text-decoration: underline;
+  transition: 0.7s;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #f7f7f7;
+  padding: 50px;
+}
+
+#summary {
+  font-size: 25px;
+  text-align: center;
+  background-color: #e9e9e9;
+  width: fit-content;
+  margin: auto;
+}
+
+#title {
+  text-align: right;
+  font-size: 50px;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+#subTitle {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+p,ul {
+  font-size: 18px;
+  line-height: 2;
+  color: #690101;
+}
+
+a {
+  color: #21659d;
+}
+
+img {
+  float: right;
+  width: 300px;
+}
+
+.sub {
+  font-weight: 300;
+}
+
+#view {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 40px auto 0;
+  font-weight: normal;
+}

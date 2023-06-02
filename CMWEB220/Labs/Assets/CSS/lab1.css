@@ -1,0 +1,67 @@
+/* set background color to ICC blue */
+body {
+    background-color: #21659D;
+}
+/* class for italic words */
+.it {
+    font-style: italic;
+}
+/* main content section */
+main {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f7f7f7;
+    padding: 50px;
+}
+
+#summary {
+    font-size: 25px;
+    text-align: center;
+    background-color: #e9e9e9;
+    width: fit-content;
+    margin: auto;
+}
+
+#title {
+    text-align: right;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#subTitle {
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+p, ul{
+    font-size: 18px;
+    line-height: 2;
+}
+
+a {
+    color: #21659D;
+}
+
+img {
+    float: right;
+    width: 300px;
+}
+
+#view {
+    font-weight: bold;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 40px auto 0;
+    font-weight: normal;
+}

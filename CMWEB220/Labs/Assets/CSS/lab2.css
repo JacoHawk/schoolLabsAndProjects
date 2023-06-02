@@ -1,0 +1,74 @@
+/* set background color to ICC blue */
+body {
+    background-color: #21659D;
+    color:black;
+}
+/* class for italic words */
+/* this makes the spans in the html italic, but it inherits the text color from whatever element it's inside of */
+span {
+    font-style: italic;
+}
+/* main content section */
+main {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f7f7f7;
+    padding: 50px;
+}
+
+#summary {
+    font-size: 25px;
+    text-align: center;
+    background-color: #e9e9e9;
+    width: fit-content;
+    margin: auto;
+}
+
+#title {
+    text-align: right;
+    font-size: 50px;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+#subTitle {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+/* since h2 does not have a text color set, it will inherit a text color of black from the body style */
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+p, ul{
+    font-size: 18px;
+    line-height: 2;
+    color: #690101 !important;
+}
+
+a {
+    color: #21659D;
+}
+
+img {
+    float: right;
+    width: 300px;
+}
+/* In the linked style sheet, the class "sub" has a font-weight of 300 */
+.sub {
+    font-weight: 300;
+}
+
+#view {
+    font-weight: bold;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 40px auto 0;
+    font-weight: normal;
+}

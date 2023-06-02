@@ -1,0 +1,114 @@
+body {
+  background-color: #222930;
+}
+
+.hero {
+  background-image: radial-gradient(50% 176%, #031f4a 80%, #0a1318 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  &__content {
+    position: relative;
+    align-self: center;
+    padding: 3rem 0;
+  }
+}
+
+.snow {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.snow .svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#snow-top-layer {
+  will-change: transform;
+  transform: translateY(-768px);
+  animation: fall 25s infinite linear;
+}
+
+#snow-bottom-layer {
+  will-change: transform;
+  transform: translateY(-768px);
+  animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+nav {
+  text-align: center;
+  margin-top: 30px;
+  z-index: 1;
+  display: inline;
+}
+
+ul {
+  display: inline;
+  width: auto;
+  text-align: center;
+  padding-inline-start: 0;
+}
+
+li {
+  display: inline;
+  text-align: center;
+  font-size: 28px;
+}
+
+li > a {
+  color: #e9e9e9;
+  text-decoration: none;
+  background-color: #10823c;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: thick solid #ab2316;
+  transition: 0.7s;
+}
+
+li > a:hover {
+  color: #e9e9e9;
+  background-color: #01172d;
+  text-decoration: underline;
+  transition: 0.7s;
+}
+
+li > a:visited {
+  color: #e9e9e9;
+}
+
+header {
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  top: 80px;
+  color: #e9e9e9;
+}
+
+main {
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  top: 140px;
+  color: #e9e9e9;
+  margin: auto 20vw;
+}

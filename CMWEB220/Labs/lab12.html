@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 12, CMWEB 220</title>
+    <link href="Assets/CSS/lab12.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#animate").animate({ opacity: "0.5" }, "slow");
+          $("main").css("background-color", "green");
+        });
+      });
+      $(document).ready(function () {
+        $("#revert").click(function () {
+          $("#animate").animate({ opacity: "1.0" });
+          $("main").css("background-color", "#e0f2f1")
+        });
+      });
+    </script>
+
+    <nav id="animate">
+      <ul id="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
+      </ul>
+    </nav>
+    <div class="flex-column-container">
+      <main>
+        <button>Initiate Animations</button>
+        <button id="revert">Revert Animations</button>
+        <h1>Main Content</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi non praesentium in ea modi molestias voluptatem amet. Enim aut, magni est
+          sequi porro modi, id culpa consectetur assumenda, fugiat praesentium. Iusto, pariatur. Iste sed veritatis ex recusandae. Mollitia, fuga
+          cumque. Ad ea odit ipsam perferendis, tempore nam dicta id nulla sed architecto magnam maxime officia repellendus cumque nisi, omnis
+          expedita? Consequatur, possimus. Ducimus cupiditate necessitatibus nobis blanditiis minus libero natus ut quas dignissimos, eos placeat
+          repellat corrupti id, nesciunt numquam dolorem doloribus optio fuga a quis similique odio tempora reprehenderit.
+        </p>
+        <img id="mush" src="Assets/Images/mush.jpeg" alt="red mushrooms" />
+      </main>
+      <footer>
+        <h1>Footer</h1>
+        <img id="frog" src="Assets/Images/frog.jpeg" alt="frog" />
+      </footer>
+    </div>
+  </body>
+</html>
