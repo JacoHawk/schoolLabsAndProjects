@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab 4, CMWEB 200 - Jacob Hawkins</title>
+
+    <meta name="description" content="Lab 4 for CMWEB 200" />
+    <meta charset="utf-8"/>
+
+    <link href="Assets/CSS/lab4.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 id="title"> 
+        Jacob Hawkins - Lab 4, CMWEB 200 
+    </h1>
+
+    <p id="return"></p>
+
+    <script>
+        var nme = window.prompt("What is your name?");
+        var miles = window.prompt("How many miles did you drive? (enter a number between 1 and 200)");
+        var gas = window.prompt("How many gallons of gas did you use? (enter a number between 1 and 100)");
+        var mpg = (miles / gas);
+        if (miles<1 || miles>200 || Number.isNaN(miles)===true || miles==="") {
+            document.getElementById("return").innerHTML="Hello " + nme + "! Please enter the amount of miles your vehicle was driven between 1 and 200 miles.";
+        } else if (gas<1 || gas>100 || Number.isNaN(gas)===true || gas==="") {
+            document.getElementById("return").innerHTML="Hello " + nme + "! Please enter the amount of gas your vehicle consumed between 1 and 100 gallons.";
+        } else {
+            document.getElementById("return").innerHTML="Hello " + nme + "! You drove " + miles + " miles and used " + gas +" gallons of gas meaning your vehicle's gas mileage was " + mpg + " miles per gallon!";
+        }
+    </script>
+
+</body>
+</html>

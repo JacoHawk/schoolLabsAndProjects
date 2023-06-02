@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab 5, CMWEB 200 - Jacob Hawkins</title>
+
+    <meta name="description" content="Lab 5 for CMWEB 200" />
+    <meta charset="utf-8"/>
+
+    <link href="Assets/CSS/lab4.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 id="title"> 
+        Jacob Hawkins - Lab 5, CMWEB 200 
+    </h1>
+
+    <div id="frm">
+        <h2>
+            Please enter the amount of gas in gallons that you used as well as the amount of miles you drove. If you have multiple sets (trips) to record, simply press "add" and you may enter more data into the fields. Pressing the "delete" button will delete all saved data.
+        </h2>
+
+        <br>
+        <hr>
+        <br>
+a
+        <label for="gas">How much gas did you use?</label>
+        <input type="text" id="gas" name="gas" >
+        <br><br>
+        <label for="miles">How many miles did you drive?</label>
+        <input type="text" id="miles" name="miles" >
+
+        <br><br>
+
+        <button onclick="add()">Add Data</button>
+        <button onclick="calculate()">Calculate Data</button>
+        <button onclick="erase()">Delete Saved Data</button>
+    </div>
+    <div>
+        <p id="return"></p>
+    </div>
+    <script>
+        let gasArray = [] 
+        let milesArray = []
+        
+        function add() {
+            let gas=document.getElementById("gas").value
+            let miles=document.getElementById("miles").value
+            let dataMSG = ''
+            document.getElementById("return").innerHTML=""
+            
+            if (isNaN(miles)==true || isNaN(gas)==true || miles == "" || gas == "" || miles<0 || gas<0) {
+                document.getElementById("return").innerHTML="Please only enter positive number values.";
+                return
+            }
+
+            document.getElementById("gas").value=""
+            document.getElementById("miles").value=""
+            gasArray.push(gas)
+            milesArray.push(miles)
+            document.getElementById("return").innerHTML = "Data has been added"
+        }
+
+        function calculate() {
+            let tripMPGMessage = ''
+            let tripMiles = 0
+            let tripGallons = 0
+            for (let i = 0; i < gasArray.length; i++){
+                tripMiles += parseInt(milesArray[i])
+                tripGallons += parseInt(gasArray[i])
+                tripMPGMessage += `The miles driven for trip ${i + 1} was ${milesArray[i]} miles and the number of gallons used was ${gasArray[i]} gallons. The mpg for the trip was ${(milesArray[i] / gasArray[i]).toFixed(2)} <br>`
+            }
+            
+            tripMPGMessage += `The total miles driven across all trips was ${tripMiles} miles and the total gas used was ${tripGallons} gallons. The average MPG across all trips was ${(tripMiles / tripGallons).toFixed(2)} miles per gallon.`
+            document.getElementById("return").innerHTML = tripMPGMessage
+            
+        }
+
+        function erase() {
+            gasArray = []
+            milesArray = []
+            document.getElementById("return").innerHTML="All data has been erased and reset."
+        }
+    </script>
+
+</body>
+</html>

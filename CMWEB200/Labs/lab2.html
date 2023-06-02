@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab 2, CMWEB 200 - Jacob Hawkins</title>
+
+    <meta name="description" content="Lab 2 for CMWEB 200" />
+    <meta charset="utf-8"/>
+
+    <link href="Assets/CSS/lab2.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 id="title"> 
+        Jacob Hawkins - Lab 2, CMWEB 200 
+    </h1>
+    <h2 id="sub-title">
+        Shopping List using Local Storage
+    </h2>
+    <div class="container">
+        <div id="input">
+            <form action="#">
+                <label for="item1">Item 1</label>
+                <br>
+                <input type="text" id="item1" name="item1" rows="1" cols="18">
+                <br><br>
+
+                <label for="item2">Item 2</label>
+                <br>
+                <input type="text" id="item2" name="item2" rows="1" cols="18">
+                <br><br>
+
+                <label for="item3">Item 3</label>
+                <br>
+                <input type="text" id="item3" name="item3" rows="1" cols="18">
+                <br><br>
+
+                <label for="item2">Item 4</label>
+                <br>
+                <input type="text" id="item4" name="item4" rows="1" cols="18">
+                <br><br>
+
+                <label for="item5">Item 5</label>
+                <br>
+                <input type="text" id="item5" name="item5" rows="1" cols="18">
+                <br><br>
+
+                <button onclick="save()">Save Items</button>
+                <button onclick="display()">Display Saved Items</button>
+                <button onclick="erase()">Erase Saved Items</button>
+            </form>
+        </div>
+        <div id="savedItems">
+            <p>Item 1: <span id="i1"></span></p> <br>
+            <p>Item 2: <span id="i2"></span></p> <br>
+            <p>Item 3: <span id="i3"></span></p> <br>
+            <p>Item 4: <span id="i4"></span></p> <br>
+            <p>Item 5: <span id="i5"></span></p> <br>
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+    function save()
+    {
+        let item1,item2,item3,item4,item5;
+        item1=document.getElementById("item1").value;
+        item2=document.getElementById("item2").value;
+        item3=document.getElementById("item3").value;
+        item4=document.getElementById("item4").value;
+        item5=document.getElementById("item5").value;
+
+        localStorage.setItem("item1",item1);
+        localStorage.setItem("item2",item2);
+        localStorage.setItem("item3",item3);
+        localStorage.setItem("item4",item4);
+        localStorage.setItem("item5",item5);
+
+        document.getElementById("item1").value = "ITEM SAVED";
+        document.getElementById("item2").value = "ITEM SAVED";
+        document.getElementById("item3").value = "ITEM SAVED";
+        document.getElementById("item4").value = "ITEM SAVED";
+        document.getElementById("item5").value = "ITEM SAVED";
+    }
+
+    function display()
+    {
+        document.getElementById("i1").innerHTML = localStorage.getItem("item1");
+        document.getElementById("i2").innerHTML = localStorage.getItem("item2");
+        document.getElementById("i3").innerHTML = localStorage.getItem("item3");
+        document.getElementById("i4").innerHTML = localStorage.getItem("item4");
+        document.getElementById("i5").innerHTML = localStorage.getItem("item5");
+
+        document.getElementById("item1").value = " ";
+        document.getElementById("item2").value = " ";
+        document.getElementById("item3").value = " ";
+        document.getElementById("item4").value = " ";
+        document.getElementById("item5").value = " ";
+    }
+
+    function erase()
+    {
+        localStorage.removeItem("item1");
+        localStorage.removeItem("item2");
+        localStorage.removeItem("item3");
+        localStorage.removeItem("item4");
+        localStorage.removeItem("item5");
+        document.getElementById("i1").innerHTML = localStorage.getItem("item1");
+        document.getElementById("i2").innerHTML = localStorage.getItem("item2");
+        document.getElementById("i3").innerHTML = localStorage.getItem("item3");
+        document.getElementById("i4").innerHTML = localStorage.getItem("item4");
+        document.getElementById("i5").innerHTML = localStorage.getItem("item5");
+    }
+
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab 3, CMWEB 200 - Jacob Hawkins</title>
+
+    <meta name="description" content="Lab 3 for CMWEB 200" />
+    <meta charset="utf-8" />
+
+    <link href="Assets/CSS/lab3.css" type="text/css" rel="stylesheet" />
+    <scipt></scipt>
+    <script type="text/javascript" ; src="Assets/JavaScript/lab3.js"></script>
+  </head>
+
+  <body onload="changeColors()">
+    <h1 id="title">Jacob Hawkins - Lab 3, CMWEB 200</h1>
+    <br />
+    <div class="frm">
+      <h2>
+        Please select a color for the text and background and then click "Save
+        Color Choice" to save the colors as a cookie.<br />
+        Press "Change Color" to change the colors to your saved color
+        choices.<br />
+        Press "Reset" to reset the cookies.
+      </h2>
+      <br />
+
+      <label for="txt-clr">Text color:</label>
+      <select name="txt-clr" id="txt-clr">
+        <option value="black">Black</option>
+        <option value="white">White</option>
+      </select>
+
+      <br />
+      <label for="bck-clr">Background color:</label>
+      <select name="bck-clr" id="bck-clr">
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+      </select>
+      <br />
+      <button onclick="save()">Save Color Choice</button>
+      <button onclick="changeColors()">Change Color</button>
+      <button onclick="reset()">Reset Color</button>
+    </div>
+  </body>
+</html>

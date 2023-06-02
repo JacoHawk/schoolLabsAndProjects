@@ -1,0 +1,36 @@
+body {
+    background-color: #222930;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e9e9e9;
+}
+
+#title {
+    text-align: center;
+    font-size: 54px;
+    color: #222930;
+    background-color: #E9E9E9;
+    margin: auto;
+    margin-top: 2em;
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    max-width: fit-content;
+    border-radius: 1em;
+    margin-bottom: 85px;
+}
+
+h2 {
+    font-size: 34px;
+    margin: 0 3rem 0;
+}
+
+.frm {
+    font-size:36px;
+    text-align: center;
+}
+
+#alrt {
+    font-size: 38px;
+    text-align: center;
+}

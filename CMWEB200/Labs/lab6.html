@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab 6, CMWEB 200 - Jacob Hawkins</title>
+
+    <meta name="description" content="Lab 6 for CMWEB 200" />
+    <meta charset="utf-8" />
+
+    <link href="Assets/CSS/lab6.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1 id="title">Jacob Hawkins - Lab 6, CMWEB 200</h1>
+
+    <div
+      id="colors"
+      style="font-size: 2rem; line-height: 3rem; text-align: center"
+    ></div>
+
+    <script>
+      var pair1;
+      var pair2;
+      var pair3;
+      var fullhex;
+      var colorcodes = ["00", "33", "66", "99", "cc", "ff"];
+
+      for (var a = 0; a < colorcodes.length; a++) {
+        for (var b = 0; b < colorcodes.length; b++) {
+          for (var c = 0; c < colorcodes.length; c++) {
+            pair1 = colorcodes[a];
+            pair2 = colorcodes[b];
+            pair3 = colorcodes[c];
+
+            fullhex = pair1 + pair2 + pair3;
+            document.getElementById("colors").innerHTML +=
+              "<p style='background-color:#" +
+              fullhex +
+              "'>#" +
+              fullhex +
+              "</p>";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab 7, CMWEB 200 - Jacob Hawkins</title>
+
+    <meta name="description" content="Lab 7 for CMWEB 200" />
+    <meta charset="utf-8"/>
+
+    <link href="Assets/CSS/lab7.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 id="title"> 
+        Jacob Hawkins - Lab 7, CMWEB 200 
+    </h1>
+
+    <h2>Insurance Monthly Rate Calculator</h2>
+
+    <div id="info">
+        <label for="age">Please enter your age in years:</label><br>
+        <input type="number" id="age" name="age" min="2" max="135">
+        <br><br>
+        <label for="amt">Please select the amount of insurance you desire:</label><br>
+        <select name="amt" id="amt">
+            <option value="2">$20,000</option>
+            <option value="3">$30,000</option>
+            <option value="4">$40,000</option>
+            <option value="5">$50,000</option>
+            <option value="6">$60,000</option>
+        </select><br><br>
+        <button onclick="calculate()">Calculate Monthly Rate</button>
+
+        <p id="return"></p>
+    </div>
+
+
+    <script>
+        function calculate() {
+            document.getElementById("return").innerHTML = "";
+            let age = document.getElementById("age").value;
+            let amt = document.getElementById("amt").value;
+            let rate = "";
+    
+            if (age<2 || age>=71 || age == "" || amt == "") {
+                document.getElementById("return").innerHTML = "Please enter a number above 2 and below 135 as well as an amount between $20,000 and $60,000.<br>Infants under 2 years and elderly above 70 will not be able to use this service.";
+                return
+            }
+            if (age>=2 && age<=17){
+                rate = 24;
+            } else if (age>=18 && age<=40){
+                rate = 32;
+            } else if (age>=41 && age<=64){
+                rate = 42;
+            } else if (age>=65 && age<=70){
+                rate = 59;
+            }
+            
+            let cost = rate * amt;
+
+            document.getElementById("return").innerHTML = `Since you are ${age} years old and would like to be insured up to $${amt}0,000, your monthly rate comes out to $${cost}.00 per month.<br>Please call or email us if you have any questions!`;
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
