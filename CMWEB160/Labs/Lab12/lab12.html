@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Jacob Hawkins - Lab 12</title>
+            
+        <meta name="description" content="This is Lab 12 for CMWEB 160" />
+        <meta charset="utf-8"/>
+                
+        <link href="lab12.css" type="text/css" rel="stylesheet" />
+                
+    </head>
+    <body>
+
+    <h1 id="intro"> 
+        Jacob Hawkins - Lab 12, CMWEB 160 
+    </h1>
+
+    <hr>
+
+    <div id="clr">
+        <button id="btnColor">Change color</button><br>
+        <button id="rstColor">Reset color</button>
+    </div>
+    
+<script>
+    const btnColor = document.getElementById("btnColor");
+
+    function random(number) {
+        return Math.floor(Math.random() * (number+1));
+    }
+
+    btnColor.onclick = function() {
+        const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+        document.body.style.backgroundColor = rndCol;
+    }
+
+    const rstColor = document.getElementById('rstColor');
+
+    rstColor.onclick = function() {
+        document.body.style.backgroundColor = '#222930';
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

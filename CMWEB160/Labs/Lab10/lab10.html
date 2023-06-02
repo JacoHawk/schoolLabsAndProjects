@@ -1,0 +1,74 @@
+z<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Jacob Hawkins - Lab 10</title>
+            
+        <meta name="description" content="This is Lab 10 for CMWEB 160" />
+        <meta charset="utf-8"/>
+                
+        <link href="lab10.css" type="text/css" rel="stylesheet" />
+           
+        <script>
+            function newContent() {
+        
+        document.write("<div align='center'><h1>This is lab 10 for CMWEB 160.</h1></div><br>")
+        document.write("<div align='center'><h3>The result of " +x+ " + " +y+ " = " +sum+ "</h3></div><br>");
+
+        document.write("<div align='center'><h3>The result of " +y+ " - " +x+ " = " +difference+ "</h3></div><br>");
+
+        document.write("<div align='center'><h3>The result of " +y+ " / " +x+ " = " +quotient+ "</h3></div><br>");
+
+        document.write("<div align='center'><h3>The modulus of " +y+ " and "+x+ " is " +modulus+ "</h3></div><br>");
+        }
+        </script>
+        
+    </head>
+    <body onload="newContent();">
+
+    <h1 id="intro"> 
+        Jacob Hawkins - Lab 10, CMWEB 160
+    </h1>
+
+    <hr>
+
+    <script type="application/javascript">
+        var number = parseInt(prompt("enter a number from 2 to 20", ""));
+        if (number < 20 && number >= 2) {
+        document.write("Thanks! " + number + " is between 2 and 20.", "");
+        } else if (isNaN(number)) {
+        parseInt(prompt("That is not a number. Please enter a number from 2 to 20.", ""));
+        } else {
+        parseInt(prompt("Oh no! " + number + " is not between 2 and 20.", ""));
+        }
+
+        var x
+        var y
+        var sum
+        var difference
+        var quotient
+        var modulus
+
+        x = + number;
+        y = 42;
+        sum = x + y;
+        difference = y - x;
+        quotient = y / x;
+        modulus = y * x;
+
+        // function newContent() {
+        // document.write("<div align='center'><h3>The result of " +x+ " + " +y+ " = " +sum+ "</h3></div><br>");
+
+        // document.write("<div align='center'><h3>The result of " +y+ " - " +x+ " = " +difference+ "</h3></div><br>");
+
+        // document.write("<div align='center'><h3>The result of " +y+ " / " +x+ " = " +quotient+ "</h3></div><br>");
+
+        // document.write("<div align='center'><h3>The modulus of " +y+ " and "+x+ " is " +modulus+ "</h3></div><br>");
+
+        // document.write("<div><h3>hello</h3></div>");
+
+    </script>
+
+    </body>
+    </html>
