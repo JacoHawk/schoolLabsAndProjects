@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab 7, CMWEB 120 - Jacob Hawkins</title>
+
+    <meta name="description" content="Lab 7 for CMWEB 120" />
+    <meta charset="utf-8"/>
+
+    <link href="Assets/CSS/lab7.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 id="title"> 
+        Lab 7, CMWEB 120 
+    </h1>
+
+    <h2 id="sub">Please fill out this form. Any questions marked with an asterisk are required.</h2>
+
+    <div class="form">
+        <form name="myForm" action="http://www.markdubois.info/PHP/EchoInformation.php" method="POST">
+            <label for="name">*Full name:</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="First name, Last name" aria-required="true" required>
+            <br>
+            <label for="email">*Email address:</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="email@provider.com" aria-required="true" required>
+            <br>
+            <label for="date">*What is today's date:</label>
+            <input type="date" id="date" name="date" aria-required="true" required>
+            <br>
+            <fieldset>
+                <legend>Which operating system are you currently using:</legend>
+                <label for="ios">iOS (iPhone, iPad, etc.)</label>
+                <input type="radio" id="ios" name="os" value="ios">
+                <br>
+                <label for="android">Android OS</label>
+                <input type="radio" id="android" name="os" value="android-os">
+                <br>
+                <label for="mac">Mac OS</label>
+                <input type="radio" id="mac" name="os" value="mac-os">
+                <br>
+                <label for="wndws">Windows</label>
+                <input type="radio" id="wndws" name="os" value="windows">
+                <br>
+                <label for="linux">Linux</label>
+                <input type="radio" id="linux" name="os" value="linux">
+                <br>
+                <label for="other">Other (not listed)</label>
+                <input type="radio" id="other" name="os" value="other">
+            </fieldset>
+            <br>
+            <label for="body">Please leave any feedback here:</label><br>
+            <textarea id="body" name="body" rows="6" cols="50"></textarea>
+            <br>
+            <input type="submit" name="submit" value="Submit Form">
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

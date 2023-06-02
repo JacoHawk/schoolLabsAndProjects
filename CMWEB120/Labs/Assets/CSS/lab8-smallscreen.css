@@ -1,0 +1,92 @@
+#header {
+    text-align: center;
+	background-color: #CCC; 
+	padding: 15px;}
+
+#links {
+    text-align: center;
+    max-width: 350px;
+	padding: 10px;
+	margin: 30px auto 0 auto ;
+	outline: 2px dashed #dd0009;
+	background: rgb(247,233,163);
+	background: radial-gradient(circle, rgba(247,233,163,1) 0%, rgba(177,177,230,1) 30%, rgba(0,212,255,1) 100%);	
+}
+
+#stories {
+    padding-left: 3%;
+}
+
+a {
+	color: #000000;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+#main {
+	max-width: 550px;
+    text-align: center;
+	margin: 25px auto 0 auto;
+	outline: 2px dashed #0053ae;
+
+}
+
+#main p {
+    text-align: left;
+}
+	 
+#news {
+    text-align: center;
+	width: 300px;
+	margin: 30px auto 30px auto;
+	border: 5px solid;
+	border-radius: 1rem;
+	padding: 7px;
+	background: rgb(247,233,163);
+	background: linear-gradient(0deg, rgba(247,233,163,1) 30%, rgba(255,66,0,0.6068802521008403) 100%);
+}
+
+#footer {
+	clear: right; 
+	padding: 15px;
+	background: #CCC;}
+
+body {
+	font-family: verdana, sans-serif; 
+	/* font-size: small; */
+	margin: 0;
+	padding: 0;}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin-top: 1em;
+	}
+
+
+@font-face {
+    font-family: 'hussar';
+    src: url(../Fonts/HussarBold.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+	font-family: 'vegan';
+	src: url(../Fonts/veganStyle.ttf);
+	font-style: normal;
+	font-weight: 100;
+}
+
+.hussar {
+    font-family: hussar;
+}
+
+.vegan {
+	font-family: vegan;
+}
