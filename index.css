@@ -38,6 +38,10 @@ h1 {
 #selector {
   width: 12rem;
   font-size: 1rem;
+  border-radius: 2rem;
+  border: thin black solid;
+  padding: 5px;
+  margin-bottom: 3rem;
 }
 
 a {
